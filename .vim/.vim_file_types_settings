@@ -1,0 +1,27 @@
+" Maxima
+au BufNewFile,BufRead *.maxima setf maxima
+
+" PHP 'n' HTML (CSS)
+"au BufNewFile,BufRead *.html set noexpandtab 
+"au BufNewFile,BufRead *.html set tabstop=2
+
+" Markdown
+au BufNewFile,BufFilePre,BufRead *.mkd set filetype=markdown
+
+" Dockerfile
+au BufNewFile,BufFilePre,BufRead Dockerfile_* set filetype=dockerfile
+
+" Vim settings
+au BufNewFile,BufFilePre,BufRead *.vim_file_types_settings set filetype=vim
+au BufNewFile,BufFilePre,BufRead *.vim_custom_mappings set filetype=vim
+au BufNewFile,BufFilePre,BufRead *.vim_vundle_plugins set filetype=vim
+
+" set spellcheck
+au BufRead,BufNewFile *.en.* set spell spelllang=en
+au BufRead,BufNewFile *.de.* set spell spelllang=de
+au BufRead,BufNewFile *.sr.* set spell spelllang=sr
+au BufRead,BufNewFile *.cp.* set spell spelllang=cp
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.mkd set filetype=markdown.pandoc
+augroup END
+au BufRead,BufNewFile *.cp.* set spell spelllang=cp

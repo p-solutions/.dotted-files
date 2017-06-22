@@ -1,0 +1,52 @@
+" use vundle to maintain packages
+" installation:
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+"set rtp+=/usr/local/opt/fzf
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-commentary'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+"Bundle 'ervandew/supertab'
+Bundle 'nanotech/jellybeans.vim'
+"Bundle 'Valloric/YouCompleteMe'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'lervag/vimtex'
+Bundle 'dhruvasagar/vim-table-mode'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+" alternative to snipmate
+"Bundle 'msanders/snipmate.vim'
+" Optional
+Bundle 'honza/vim-snippets'
+Bundle 'szw/vim-dict'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'christoomey/vim-tmux-navigator'
+"Bundle 'vim-pandoc/vim-pandoc'
+"Bundle 'vim-pandoc/vim-pandoc-syntax'
+Bundle 'junegunn/fzf'
+Bundle 'junegunn/fzf.vim'
+
+"all of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
