@@ -19,22 +19,23 @@ vno <C-/> gc
 
 " USE TAB WITH YouCompleteMe
 " MAP OTHER KEYS TO SNIPMATE
-:imap <C-J> <Plug>snipMateNextOrTrigger
-:smap <C-J> <Plug>snipMateNextOrTrigger
+:imap <leader>s <Plug>snipMateNextOrTrigger
+:smap <leader>s <Plug>snipMateNextOrTrigger
 
 :map <leader><leader> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+
+:map <leader>l :tabn<CR>
+:map <leader>h :tabp<CR>
+:map <leader>c :tab new<CR>
+:map <leader>q :tab close<CR>
+:map <leader>- :split<CR>
+:map <leader>/ :vsplit<CR>
 
 :map <C-h> <C-w>h
 :map <C-j> <C-w>j
 :map <C-k> <C-w>k
 :map <C-l> <C-w>l
-:map <C-H> :tabp<CR>
-:map <C-L> :tabn<CR>
-:map <leader>c :tab new<CR>
-" :map <C-Bar> :vsplit<CR>
-:nno <C--> :split<CR>
-:map <C-%> :split<CR>
 :nnoremap<C-q> :hide<CR>
 
 ":nnoremap <C-e> :execute 'vnew | 0read ! interpreter' expand('%')
