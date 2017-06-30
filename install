@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo apt-get install pdftoppm
+sudo apt-get install poppler
+sudo apt-get install poppler-utils 
+
+sudo apt-get install ttf-dejavu
+export PATH=$PATH:/usr/lib/w3m/
+sudo apt-get install zathura 
+sudo apt-get install feh
+sudo apt-get install w3m w3m-img

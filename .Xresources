@@ -14,6 +14,13 @@ xterm*toolBar:            false
 XTerm*metaSendsEscape:    true
 XTerm*eightBitInput:      false
 
+
+!//wiki.archlinux.org/index.php/Xterm
+<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
 ! Molokai theme
 *xterm*background: #101010
 *xterm*foreground: #d0d0d0
