@@ -17,6 +17,9 @@ vno <up> <Nop>
 no <C-/> gc
 vno <C-/> gc
 
+" Folding
+no <Space> za
+
 " USE TAB WITH YouCompleteMe
 " MAP OTHER KEYS TO SNIPMATE
 :imap <leader>s <Plug>snipMateNextOrTrigger

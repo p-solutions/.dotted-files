@@ -1,1 +1,20 @@
-PS1='\[\e[38;5;82m\][\u@\h \W]\$\[\e[0m\] '
+set editing-mode vi
+set keymap vi-command
+set show-mode-in-prompt on
+
+# https://github.com/calid/bash
+# set vi-ins-mode-string "\1\e[34;1m\2(ins)\1\e[0m\2"
+# set vi-cmd-mode-string "\1\e[35;1m\2(cmd)\1\e[0m\2"
+set vi-ins-mode-string '(ins)'
+set vi-cmd-mode-string '(cmd)'
+
+# PS1='\u@\h \m $ '
+
+# PS1='\[\e[38;5;82m\][\u@\h \W]\$\[\e[0m\] '
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+parse_git_branch() {
+       git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\[\e[32;1m\][\w\e[36;1m\]\$(parse_git_branch)\e[32;1m\]]$\[\e[0m\] "

@@ -4,8 +4,8 @@ set show-mode-in-prompt on
 #https://github.com/calid/bash
 set vi-ins-mode-string \1\e[34;1m\2(ins)\1\e[0m\2
 set vi-cmd-mode-string \1\e[35;1m\2(cmd)\1\e[0m\2
-#PS1='\u@\h \m $ '
+PS1='\u@\h \m $ '
 
-set meta-flag on
-set convert-meta off
-set output-meta on
+#set meta-flag on
+#set convert-meta off
+#set output-meta on

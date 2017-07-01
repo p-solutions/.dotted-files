@@ -45,6 +45,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'junegunn/fzf'
 Bundle 'junegunn/fzf.vim'
 Bundle 'amiorin/vim-eval'
+Bundle 'godlygeek/tabular'
+Bundle 'xuhdev/vim-latex-live-preview'
 
 "all of your Plugins must be added before the following line
 call vundle#end()            " required
