@@ -114,3 +114,10 @@ source ~/.dotted-files/.vim/.vim_custom_mappings
 
 let g:livepreview_previewer = 'evince'
 let g:livepreview_engine = 'pdflatex'
+
+" Run
+
+"http://vim.wikia.com/wiki/Append_output_of_an_external_command
+:command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
+
+let NERDTreeQuitOnOpen=1
